@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", "Noto Sans TC", sans-serif;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes start {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes start {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes Textstart {
+  from {
+    transform: translateY(5%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes Textstart {
+  from {
+    transform: translateY(5%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes Imgstart {
+  from {
+    margin-bottom: -50px;
+  }
+  to {
+    margin-bottom: 0px;
+  }
+}
+@keyframes Imgstart {
+  from {
+    margin-bottom: -50px;
+  }
+  to {
+    margin-bottom: 0px;
+  }
+}
+.modal {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2D2C2C;
+  z-index: 10;
+  -webkit-animation: start 0.5s ease-out 0.5s forwards;
+          animation: start 0.5s ease-out 0.5s forwards;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  color: #2D2C2C;
+}
+.header .logo .title {
+  cursor: pointer;
+}
+.header .logo .title span {
+  color: crimson;
+}
+.header .navbar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-left: 20%;
+}
+.header .navbar ul li a {
+  text-decoration: none;
+  color: #2D2C2C;
+  margin: 1rem 1rem;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.header .navbar ul li a:hover {
+  color: crimson;
+}
+
+.menu-btn {
+  color: #2D2C2C;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.section-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  -webkit-animation: Textstart 1s ease 0.4s forwards;
+          animation: Textstart 1s ease 0.4s forwards;
+}
+.section-info .info-left {
+  margin: 8rem 0 0 10%;
+  font-size: 32px;
+}
+.section-info .info-left .web-title {
+  color: crimson;
+}
+.section-info .info-left .web-info {
+  margin: 1rem 0 0 3rem;
+  font-size: 20px;
+  width: 65%;
+}
+.section-info .info-right {
+  margin: 15rem 0 0 0;
+  width: 85%;
+}
+.section-info .info-right .data-title {
+  color: #698BA9;
+  text-align: right;
+  font-size: 32px;
+}
+.section-info .info-right .data-info {
+  margin: 1rem 0 0 20%;
+  font-size: 20px;
+}
+
+.banner {
+  position: absolute;
+  bottom: 0;
+  width: 70vw;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: Imgstart 1.2s ease 0.4s forwards;
+          animation: Imgstart 1.2s ease 0.4s forwards;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header .navbar ul {
+    margin-left: 0%;
+  }
+  .header .navbar ul li a {
+    text-decoration: none;
+    color: #2D2C2C;
+    margin: 1rem 1rem;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .header .navbar ul li a:hover {
+    color: crimson;
+  }
+  .banner {
+    transform: translate(-50%, 20%);
+    width: 110vw;
+  }
+  .section-info .info-right {
+    margin: 15rem 0 0 2rem;
+    width: 85%;
+  }
+  .section-info .info-right .data-title {
+    color: #698BA9;
+    text-align: right;
+    font-size: 32px;
+  }
+  .section-info .info-right .data-info {
+    margin: 1rem 0 0 30%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header .navbar ul {
+    margin-left: 0%;
+  }
+  .header .navbar ul li a {
+    text-decoration: none;
+    color: #2D2C2C;
+    margin: 1rem 1rem;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .header .navbar ul li a:hover {
+    color: crimson;
+  }
+  .banner {
+    width: 110vw;
+  }
+  .section-info .info-left {
+    font-size: 28px;
+  }
+  .section-info .info-left .web-info {
+    margin: 1rem 0 0 3rem;
+    font-size: 16px;
+    width: 65%;
+  }
+  .section-info .info-right {
+    margin: 12rem 0 0 0;
+    width: 85%;
+  }
+  .section-info .info-right .data-title {
+    font-size: 28px;
+  }
+  .section-info .info-right .data-info {
+    margin: 1rem 0 0 10%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    color: white;
+    content: "\f00d";
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+  .header .navbar ul {
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #2D2C2C;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .header .navbar ul.active {
+    left: 0;
+  }
+  .header .navbar ul li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+    color: white;
+  }
+  .section-info {
+    grid-template-columns: 1fr;
+    height: 20vh;
+  }
+  .section-info .info-left {
+    margin: 2rem 0 0 10%;
+    font-size: 22px;
+  }
+  .section-info .info-left .web-info {
+    margin: 1rem 0 0 3rem;
+    font-size: 16px;
+    width: 65%;
+  }
+  .section-info .info-right {
+    margin: 2rem 0 0 10%;
+    width: 85%;
+  }
+  .section-info .info-right .data-title {
+    text-align: left;
+    font-size: 22px;
+  }
+  .section-info .info-right .data-info {
+    margin: 1rem 0 0 3rem;
+    font-size: 16px;
+    width: 65%;
+  }
+  .banner {
+    transform: translate(-50%, 20%);
+    width: 60rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-info {
+    height: 20vh;
+  }
+  .section-info .info-left {
+    margin: 3rem 0 0 10%;
+    font-size: 20px;
+  }
+  .section-info .info-left .web-info {
+    margin: 0.5rem 0 0 1.5rem;
+    font-size: 14px;
+    width: 80%;
+  }
+  .section-info .info-right {
+    margin: 1rem 0 0 10%;
+    width: 85%;
+  }
+  .section-info .info-right .data-title {
+    text-align: left;
+    font-size: 20px;
+  }
+  .section-info .info-right .data-info {
+    margin: 0.5rem 0 0 1.5rem;
+    font-size: 14px;
+    width: 80%;
+  }
+}
