@@ -287,24 +287,24 @@ body {
   .section-info .info-left .web-info {
     margin: 1rem 0 0 3rem;
     font-size: 16px;
-    width: 65%;
+    width: 75%;
   }
   .section-info .info-right {
     margin: 2rem 0 0 10%;
     width: 85%;
   }
   .section-info .info-right .data-title {
-    text-align: left;
+    margin-right: 1rem;
     font-size: 22px;
   }
   .section-info .info-right .data-info {
     margin: 1rem 0 0 3rem;
     font-size: 16px;
-    width: 65%;
+    width: 75%;
   }
   .banner {
     transform: translate(-50%, 10%);
-    width: 65rem;
+    width: 60rem;
   }
 }
 @media screen and (max-width: 468px) {
@@ -325,7 +325,6 @@ body {
     width: 85%;
   }
   .section-info .info-right .data-title {
-    text-align: left;
     font-size: 20px;
   }
   .section-info .info-right .data-info {

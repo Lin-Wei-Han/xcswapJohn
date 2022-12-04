@@ -296,27 +296,27 @@ body{
             .web-info{
                 margin:1rem 0 0 3rem ;
                 font-size: 16px;
-                width: 65%;
+                width: 75%;
             }
         }
         .info-right{
             margin: 2rem 0 0 10%;
             width: 85%;
             .data-title{
-                text-align: left;
+                margin-right: 1rem;
                 font-size: 22px;
             }
             .data-info{
                 margin:1rem 0 0 3rem ;
                 font-size: 16px;
-                width: 65%;
+                width: 75%;
             }
         }
     }
 
     .banner{
         transform: translate(-50% ,10%);
-        width: 65rem;
+        width: 60rem;
     }
     
 }
@@ -338,7 +338,6 @@ body{
             margin: 1rem 0 0 10%;
             width: 85%;
             .data-title{
-                text-align: left;
                 font-size: 20px;
             }
             .data-info{
