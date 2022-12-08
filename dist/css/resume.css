@@ -9,12 +9,6 @@ body {
   height: 100vh;
 }
 
-.max-width {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 @-webkit-keyframes start {
   from {
     height: 100%;
@@ -34,18 +28,18 @@ body {
 }
 @-webkit-keyframes Imgstart {
   from {
-    margin: 7rem auto;
+    margin: 11rem auto 0;
   }
   to {
-    margin: 5rem auto;
+    margin: 9rem auto 0;
   }
 }
 @keyframes Imgstart {
   from {
-    margin: 7rem auto;
+    margin: 11rem auto 0;
   }
   to {
-    margin: 5rem auto;
+    margin: 9rem auto 0;
   }
 }
 @-webkit-keyframes colorBlock {
@@ -265,24 +259,22 @@ body {
 }
 
 .max-width {
-  margin: 5rem 0;
   display: grid;
   grid-template-columns: 40fr 60fr;
-  height: 100%;
 }
 
 .about-left img.personal {
   display: block;
-  margin: 5rem auto;
+  margin: 9rem auto 0;
   text-align: center;
   -webkit-animation: Imgstart 1.2s ease 0.4s forwards;
           animation: Imgstart 1.2s ease 0.4s forwards;
-  width: 80%;
+  width: 70%;
   z-index: 3;
 }
 
 .about-right {
-  margin: 5rem 2rem;
+  margin: 7rem 2rem;
   width: 90%;
 }
 .about-right .title {
@@ -398,6 +390,22 @@ body {
 .button .button-cv:hover {
   color: #ffffff;
   background-color: crimson;
+}
+
+footer {
+  background: #2D2C2C;
+  padding: 2rem 23px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+footer span a:hover {
+  color: white;
 }
 
 @media screen and (max-width: 1200px) {
@@ -521,5 +529,8 @@ body {
     margin-top: 0.5rem;
     padding: 5px;
     font-size: 18px;
+  }
+  footer {
+    font-size: 12px;
   }
 }
