@@ -29,13 +29,13 @@ const projectDetail = [
         title: "全國交通事故類型 Dashboard",
         info: "利用 Power BI 串接全國交通事故統計資料，以視覺化圖表呈現各地區車禍事故的分布熱點，並進一步觀察主要發生交通事故的肇事主因。並公開部署至雲端，供民眾使用。",
         img: "../image/project/powerbi_trafic.png",
-        url: "https://app.powerbi.com/view?r=eyJrIjoiZjQxNTNkMTktYmI1NS00MjJhLWFjY2QtNGJmNjU3Zjc0NGI2IiwidCI6IjM5OTIzMmZiLTE3ZDEtNDVjYS1iZGE2LTViNTQwNDQxYmQ2MiIsImMiOjEwfQ%3D%3D&pageName=ReportSectionb43068ba363795596eaa"
+        url: "https://reurl.cc/6Lnmv5"
     },
     {
         title: "全球新冠肺炎趨勢 Dashboard",
         info: "利用 Power BI 串接衛服部資料庫，抓取全球確診數及本國每日確診等即時資訊。協助使用者觀察疫情發展近況，並公開部署至雲端，供民眾使用。",
         img: "../image/project/power_bi_covid.png",
-        url: "https://app.powerbi.com/view?r=eyJrIjoiMmE3YWNiNjgtZjc4NS00MzhhLTlkZDEtMTM4ZWFlYmFjZjBiIiwidCI6IjM5OTIzMmZiLTE3ZDEtNDVjYS1iZGE2LTViNTQwNDQxYmQ2MiIsImMiOjEwfQ%3D%3D&pageName=ReportSection"
+        url: "https://reurl.cc/x1VmL5"
     },
     {
         title: "麥索迪斯企業形象網站",
