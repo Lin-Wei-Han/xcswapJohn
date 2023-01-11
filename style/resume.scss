@@ -132,6 +132,16 @@ body{
       }
 }
 
+@keyframes power {
+    from {
+        width: 0;
+      }
+    
+      to {
+        width:70%;
+      }
+}
+
 .modal{
     content: "";
     position: absolute;
@@ -296,6 +306,10 @@ body{
         .sas::before{
             width: 80%;
             animation: sas 1.2s ease 1.2s forwards;
+        }
+        .power::before{
+            width: 80%;
+            animation: power 1.2s ease 1.3s forwards;
         }
     }
 }

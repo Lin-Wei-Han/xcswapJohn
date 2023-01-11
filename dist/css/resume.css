@@ -202,6 +202,22 @@ body {
     width: 80%;
   }
 }
+@-webkit-keyframes power {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes power {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
 .modal {
   content: "";
   position: absolute;
@@ -369,6 +385,11 @@ body {
   width: 80%;
   -webkit-animation: sas 1.2s ease 1.2s forwards;
           animation: sas 1.2s ease 1.2s forwards;
+}
+.about-right .skill-bar .power::before {
+  width: 80%;
+  -webkit-animation: power 1.2s ease 1.3s forwards;
+          animation: power 1.2s ease 1.3s forwards;
 }
 
 .button {

@@ -20,16 +20,28 @@ const projectDetail = [
         url: "https://shinycovid-19.herokuapp.com/"
     },
     {
-        title: "麥索迪斯企業形象網站",
-        info: "協助企業打造形象網站，瞄準目標客群，使客戶能夠迅速了解企業的服務項目。不僅網站資訊清晰，並加入動態元素，創造更具現代化的形象網站。",
-        img: "../image/project/myosotis.png",
-        url: "https://myosotis.online/"
-    },
-    {
         title: "六都房價趨勢與預測儀表板",
         info: "以內政部實價登陸公布隻交易紀錄，實現六都房價走勢儀表板，並且以隨機數森林創建預測模型，針對房價做預測。亦提供嚴謹的統計檢定結果，分析六都差異。",
         img: "../image/project/houseprice.png",
         url: "https://taiwanhouseprice.herokuapp.com/"
+    },
+    {
+        title: "全國交通事故類型 Dashboard",
+        info: "利用 Power BI 串接全國交通事故統計資料，以視覺化圖表呈現各地區車禍事故的分布熱點，並進一步觀察主要發生交通事故的肇事主因。並公開部署至雲端，供民眾使用。",
+        img: "../image/project/powerbi_trafic.png",
+        url: "https://app.powerbi.com/view?r=eyJrIjoiZjQxNTNkMTktYmI1NS00MjJhLWFjY2QtNGJmNjU3Zjc0NGI2IiwidCI6IjM5OTIzMmZiLTE3ZDEtNDVjYS1iZGE2LTViNTQwNDQxYmQ2MiIsImMiOjEwfQ%3D%3D&pageName=ReportSectionb43068ba363795596eaa"
+    },
+    {
+        title: "全球新冠肺炎趨勢 Dashboard",
+        info: "利用 Power BI 串接衛服部資料庫，抓取全球確診數及本國每日確診等即時資訊。協助使用者觀察疫情發展近況，並公開部署至雲端，供民眾使用。",
+        img: "../image/project/power_bi_covid.png",
+        url: "https://app.powerbi.com/view?r=eyJrIjoiMmE3YWNiNjgtZjc4NS00MzhhLTlkZDEtMTM4ZWFlYmFjZjBiIiwidCI6IjM5OTIzMmZiLTE3ZDEtNDVjYS1iZGE2LTViNTQwNDQxYmQ2MiIsImMiOjEwfQ%3D%3D&pageName=ReportSection"
+    },
+    {
+        title: "麥索迪斯企業形象網站",
+        info: "協助企業打造形象網站，瞄準目標客群，使客戶能夠迅速了解企業的服務項目。不僅網站資訊清晰，並加入動態元素，創造更具現代化的形象網站。\n(目前暫停使用)",
+        img: "../image/project/myosotis.png",
+        url: "https://myosotis.online/"
     },
 ]
 
