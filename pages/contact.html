@@ -64,20 +64,20 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="#">
+                <form action="#" id="myForm">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="YOUR NAME" required>
+                            <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="YOUR MAIL" required>
+                            <input type="email" name="email" id="email" placeholder="YOUR MAIL" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="YOUR SUBJECT" required>
+                        <input type="text" name="subject" id="subject"  placeholder="YOUR SUBJECT" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="YOUR MESSAGE" required></textarea>
+                        <textarea cols="30" name="message" id="message" rows="10" placeholder="YOUR MESSAGE" required></textarea>
                     </div>
                     <div class="button-area">
                         <button type="submit">SEND</button>
@@ -90,5 +90,38 @@
         <span>Created By <a href="../index.html">Lin</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
     <script src="../main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">      
+    (function () {
+        emailjs.init("hheS8VWY-hL_uATbx");
+      })();
+    </script>
+    <script>
+        // listen to the form submission
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+  
+            const serviceID = "service_fmj5rri";
+            const templateID = "template_85wj80s";
+  
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+              (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+              }
+            );
+          });
+      </script>
+  
 </body>
 </html>
